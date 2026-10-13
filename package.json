@@ -1,0 +1,37 @@
+{
+  "name": "rockin-sampler",
+  "productName": "Rockin Sampler",
+  "version": "0.6.1",
+  "description": "Sampler de pads per a les bandes de Rockin, pensat per al Novation Launchkey",
+  "author": "Rockin.cat SCCL",
+  "license": "CC-BY-SA-4.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "exe": "electron-builder --win portable",
+    "mac": "electron-builder --mac zip"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "cat.rockin.sampler",
+    "productName": "Rockin Sampler",
+    "files": [
+      "index.html",
+      "main.js",
+      "fonts/**"
+    ],
+    "win": {
+      "target": "portable"
+    },
+    "mac": {
+      "target": "zip",
+      "category": "public.app-category.music",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "El Rockin Sampler fa servir el micròfon per gravar sons als pads."
+      }
+    }
+  }
+}

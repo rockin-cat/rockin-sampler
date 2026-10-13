@@ -1,0 +1,5 @@
+/* Lora (SIL Open Font License, vegeu Lora-OFL.txt), inclosa perquè l'app funcioni sense internet */
+@font-face{font-family:"Lora";src:url("Lora-Regular.ttf") format("truetype");font-weight:400 500;font-style:normal}
+@font-face{font-family:"Lora";src:url("Lora-Italic.ttf") format("truetype");font-weight:400 500;font-style:italic}
+@font-face{font-family:"Lora";src:url("Lora-Bold.ttf") format("truetype");font-weight:600 700;font-style:normal}
+@font-face{font-family:"Lora";src:url("Lora-BoldItalic.ttf") format("truetype");font-weight:600 700;font-style:italic}
