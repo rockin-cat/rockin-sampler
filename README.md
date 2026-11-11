@@ -6,7 +6,7 @@ Sampler de pads per fer servir el **Novation Launchkey 25** com un instrument m�
 
 **App per a Mac (funciona sense internet):** a [Releases](https://github.com/rockin-cat/rockin-sampler/releases/latest) hi ha `Rockin-Sampler-Mac-Apple.zip` (Mac amb xip M1–M4) i `Rockin-Sampler-Mac-Intel.zip`. Descomprimeix-lo i fes clic dret → Obre a «Instal·la Rockin Sampler.command».
 
-Rockin.cat SCCL · llicència CC BY-SA 4.0
+Rockin.cat SCCL · llicència [CC BY-NC-SA 4.0](LICENSE.md)
 
 ## Novetats de la 0.6
 

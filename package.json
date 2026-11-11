@@ -4,7 +4,7 @@
   "version": "0.6.1",
   "description": "Sampler de pads per a les bandes de Rockin, pensat per al Novation Launchkey",
   "author": "Rockin.cat SCCL",
-  "license": "CC-BY-SA-4.0",
+  "license": "CC-BY-NC-SA-4.0",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
