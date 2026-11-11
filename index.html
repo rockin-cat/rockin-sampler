@@ -976,7 +976,7 @@ $('hbRec').addEventListener('pointerdown', e => { e.preventDefault(); $('hbRec')
 $('hbRec').addEventListener('pointerup', () => recDown(false));
 $('hbRec').addEventListener('pointercancel', () => recDown(false));
 // ● sol (prémer i deixar anar) grava el ritme en bucle.
-// Mantenir ● i tocar un pad grava un so nou en aquell pad (com al Koala). Shift + ● grava al pad triat.
+// Mantenir ● i tocar un pad grava un so nou en aquell pad. Shift + ● grava al pad triat.
 let recHold = null;
 function recButton(){ if (shiftActive() || recording) toggleRec(); else setSeqRec(!SEQ.rec); }
 function recDown(down){
@@ -1035,7 +1035,7 @@ function setMaster(kind, v){
   if (kind === 'v') master.gain.setTargetAtTime(v, t, .02);
 }
 
-/* ================= Seqüenciador en bucle (tipus Koala) ================= */
+/* ================= Seqüenciador en bucle ================= */
 // Els cops es desen com a esdeveniments {s: pad, p: posició en temps (beats) dins el bucle, v: força}
 const SEQ = {bpm:96, swing:0, metro:false, bars:1, q:.25, countIn:true, events:[], notes:[], padLen:{}, laneLen:{}, playing:false, rec:false, anchorT:0, anchorB:0, sched:0, timer:null, follow:true};
 let evId = 1, viewBar = 0; const skip = new Set(), undoStack = [];

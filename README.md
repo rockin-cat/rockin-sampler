@@ -1,6 +1,6 @@
 # Rockin Sampler
 
-Sampler de pads per fer servir el **Novation Launchkey 25** com un instrument més de la banda. Inspirat en Koala Sampler, pensat per a l'aula i el directe.
+Sampler de pads per fer servir el **Novation Launchkey 25** com un instrument més de la banda. Pensat per a l'aula i el directe.
 
 **Obre'l al navegador (Chrome o Edge):** https://rockin-cat.github.io/rockin-sampler/
 
@@ -17,7 +17,7 @@ Rockin.cat SCCL · llicència [CC BY-NC-SA 4.0](LICENSE.md)
 
 ## Novetats de la 0.4
 
-- **Seqüenciador en bucle tipus Koala**: prem ● (pantalla o Launchkey), compte enrere d'un compàs i tot el que toques als pads es grava en bucle; cada volta s'hi afegeix el que toques. Bucle d'1, 2, 4 o 8 compassos, quantització (sense, 1/8, 1/16, 1/32), compte enrere, metrònom, swing i botó de desfer. La graella permet editar-ho a mà, compàs a compàs.
+- **Seqüenciador en bucle**: prem ● (pantalla o Launchkey), compte enrere d'un compàs i tot el que toques als pads es grava en bucle; cada volta s'hi afegeix el que toques. Bucle d'1, 2, 4 o 8 compassos, quantització (sense, 1/8, 1/16, 1/32), compte enrere, metrònom, swing i botó de desfer. La graella permet editar-ho a mà, compàs a compàs.
 - **Capa d'efectes (FX)**: el botó FX del costat dels pads (el botó «Stop/Solo/Mute» del Launchkey) converteix els 16 pads en efectes en directe sobre tot el que sona. Es mantenen premuts; Shift + pad els deixa fixos. Fila de dalt: Repeat 1/4, 1/8, 1/16, 1/32, Gate, Al revés, Tape stop, Lent. Fila de baix: Filtre greu, Filtre agut, Telèfon, Distorsió, Bitcrush, Pitch avall, Pitch amunt, Espai.
 - **Gravar un so des del Launchkey**: mantén ● i toca un pad; per parar, torna a tocar el pad o prem ●. ● sol (prémer i deixar anar) grava el ritme. Shift + ● també grava al pad triat.
 
