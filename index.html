@@ -16,7 +16,7 @@
   --d-body:#1c1c20; --d-body-2:#141417; --d-btn:#2e2e34; --d-btn-2:#25252a; --d-edge:#09090a; --d-lbl:#d4d4d8; --d-dim:#85858e; --d-pad:#28282e;
   --lcd-bg:#061016; --lcd-ink:#c4ecff; --wave-bg:#0a0a0c;
   --f-ui:"Ubuntu",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; --f-title:"Lora",Georgia,serif; --f-mono:"Ubuntu Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --nav-h:54px; --status-h:28px; --insp-w:360px;
+  --nav-h:56px; --status-h:28px; --insp-w:360px;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -35,6 +35,8 @@ button,input,select{font:inherit;color:inherit}
 .view{min-height:0;min-width:0;overflow:auto;padding:18px 20px}
 
 /* ---------- Barra de navegació ---------- */
+.nav.rk-cap{--ink:#1f1e1c;--muted:#5c584f;--dim:#8a857c;--panel:#ffffff;--panel-2:#f7f4ee;--raised:#efeae1;--line:rgba(31,30,28,.16);--line-2:rgba(31,30,28,.28);color-scheme:light}
+
 .nav{display:flex;align-items:center;gap:18px;padding:0 14px;background:var(--panel);border-bottom:1px solid var(--line);min-width:0}
 .brand{display:flex;align-items:center;gap:10px;flex:none}
 .logo{font-weight:700;letter-spacing:.16em;font-size:14px;background:var(--yellow);color:var(--yellow-ink);padding:4px 8px 3px;border-radius:3px}
@@ -275,7 +277,7 @@ details.more[open] summary{margin-bottom:12px}
 /* ---------- Pantalles petites: es permet scroll ---------- */
 @media (max-width:1380px){ :root{--insp-w:320px} .tab kbd{display:none} .tab{padding:0 10px} #wizBtn{display:none} .chip{max-width:150px} .nav{gap:12px}
   .lk{grid-template-columns:150px minmax(0,1fr) 70px;gap:14px;padding:16px} .view{padding:14px 16px} }
-@media (max-width:1180px){ .tg{display:none} .apptitle{display:none} }
+@media (max-width:1180px){ .tg{display:none} .nav .rk-sep,.nav .rk-eina{display:none} }
 @media (max-width:1000px){
   body{overflow:auto} .app{height:auto;min-height:100%;grid-template-rows:auto auto var(--status-h)}
   .nav{flex-wrap:wrap;padding:8px 12px;gap:10px} .tabs{order:3;width:100%;overflow-x:auto;height:40px}
@@ -293,10 +295,15 @@ details.more[open] summary{margin-bottom:12px}
   .transport{order:2} .steps{grid-template-columns:1fr} .navr .tbtn:not(.icon){display:none}
 }
 </style>
+<link rel="stylesheet" href="/marca/capcalera.css">
 
 <div class="app">
-  <header class="nav">
-    <div class="brand"><span class="logo">ROCKIN</span><span class="apptitle">Sampler</span></div>
+  <header class="nav rk-cap rk-amb-controls">
+    <div class="rk-marca">
+      <a class="rk-totes" href="/" title="Totes les eines Rockin"><img class="rk-logo" src="/marca/rockin-logo-fosc.png" alt="Rockin" width="382" height="72"></a>
+      <span class="rk-sep" aria-hidden="true"></span>
+      <span class="rk-eina">Sampler</span>
+    </div>
     <nav class="tabs" role="tablist" aria-label="Vistes">
       <button class="tab on" type="button" role="tab" data-tab="tocar">Pads<kbd>1</kbd></button>
       <button class="tab" type="button" role="tab" data-tab="seq">Seqüenciador<kbd>2</kbd></button>
