@@ -1,5 +1,6 @@
 import plistlib, shutil, subprocess, os, json, sys
-B='/home/claude/build'; SRC='/home/claude/rockin-sampler'
+SRC=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # arrel del repo
+B=os.environ.get('BUILD_DIR', os.path.join(os.path.dirname(SRC), 'build'))   # carpeta de treball (Electron, icona, rcodesign)
 VER=json.load(open(f'{SRC}/package.json'))['version']
 INSTALL='''#!/bin/bash
 # Instal·la el Rockin Sampler a Aplicacions i el prepara per obrir-se en aquest Mac
